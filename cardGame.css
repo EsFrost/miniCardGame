@@ -1,0 +1,77 @@
+.card-image {
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	width: 222px;
+	height: 323px;
+}
+
+#second-col {
+	margin-left: 242px;
+}
+
+#first-card-front, #first-card-back {
+	cursor: pointer;
+}
+
+#first-card-back, #second-card-back {
+	position: absolute;
+	width: 222px;
+	height: 323px;
+	backface-visibility: hidden;
+	transform: perspective(600px) rotateY(0deg);
+	transition: all 0.8s ease;
+}
+
+#first-card-front, #second-card-front {
+	position: absolute;
+	width: 222px;
+	height: 323px;
+	backface-visibility: hidden;
+	transform: perspective(600px) rotateY(180deg);
+	transition: all 0.8s ease;
+}
+
+
+.reset-btn, .greater-btn, .smaller-btn {
+	position: absolute;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	width: 120px;
+	height: 35px;
+	background-color: #ededed;
+
+	color:#444;
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    padding: 5px;
+
+	cursor: pointer;
+}
+
+.reset-btn:hover, .greater-btn:hover, .smaller-btn:hover {
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+.reset-btn {
+	margin-top: 403px;
+	margin-left: 172px;
+}
+
+.greater-btn {
+	margin-top: 343px;
+	margin-left: 91px;
+}
+
+.smaller-btn {
+	margin-top: 343px;
+	margin-left: 243px;
+}
+
+.score-text {
+	margin-top: 450px;
+	font-size: 25px;
+}
